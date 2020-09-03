@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #222;
+  color: #fff;
+}
+
+body,
+button,
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  width: inherit;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  width: 300px;
+  height: 400px;
+
+  overflow-y: auto;
+
+  background-color: #111;
+  border-radius: 10px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book ul {
+  height: 100%;
+  width: 100%;
+
+  padding: 5px;
+}
+
+.book ul li {
+  list-style-type: none;
+  width: 100%;
+  margin: 10px 0;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.book ul li p {
+  width: 100%;
+  padding: 5px;
+}
+
+.book ul li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: red;
+  padding: 7px;
+  line-height: 0.5;
+  border-radius: 50%;
+}
+
+#app input {
+  width: 300px;
+  height: 40px;
+
+  margin: 10px 0;
+
+  text-align: center;
+}
+
+#app button {
+  width: 100px;
+  height: 40px;
+}
